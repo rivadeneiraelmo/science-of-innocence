@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: after publishing, replace the URL below with the site's real
+     GitHub Pages address (e.g. https://<username>.github.io/<repo>/) and
+     update robots.txt and the canonical link in index.html to match. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://rivadeneiraelmo.github.io/science-of-innocence/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>

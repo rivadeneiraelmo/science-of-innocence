@@ -1,0 +1,166 @@
+/* Elmo Rivadeneira — The Science of Innocence (hub site)
+   Bright background, dark text, high contrast. Color-blind safe:
+   meaning is never carried by red/green color alone. Phone-first. */
+
+:root {
+  --ink: #14202e;
+  --body: #24303d;
+  --accent: #0b3d91;
+  --accent-dark: #082c68;
+  --card-bg: #f4f7fb;
+  --card-border: #b9c9dd;
+  --page-bg: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--page-bg);
+  color: var(--body);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.125rem;
+  line-height: 1.65;
+}
+
+.site-header {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 1rem;
+  text-align: left;
+}
+
+.kicker {
+  margin: 0 0 0.5rem;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+h1 {
+  margin: 0 0 0.75rem;
+  font-size: 2.4rem;
+  line-height: 1.15;
+  color: var(--ink);
+}
+
+.tagline {
+  margin: 0 0 1.25rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--ink);
+}
+
+.page-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 3px solid var(--accent);
+}
+
+.page-nav a {
+  display: inline-block;
+  padding: 0.55rem 0.9rem;
+  border: 2px solid var(--accent);
+  border-radius: 0.4rem;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: var(--accent-dark);
+  text-decoration: none;
+  background: #ffffff;
+}
+
+.page-nav a:hover,
+.page-nav a:focus {
+  background: var(--accent);
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+main {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 0 1.25rem 1rem;
+}
+
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-left: 6px solid var(--accent);
+  border-radius: 0.4rem;
+  padding: 1.25rem 1.25rem 1rem;
+  margin: 1.5rem 0;
+}
+
+.card h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.55rem;
+  line-height: 1.25;
+  color: var(--ink);
+}
+
+.card p { margin: 0 0 0.9rem; }
+
+.card ul {
+  margin: 0 0 0.9rem;
+  padding-left: 1.4rem;
+}
+
+.card li { margin-bottom: 0.55rem; }
+
+a { color: var(--accent-dark); text-decoration: underline; }
+
+a:hover, a:focus { color: var(--accent); }
+
+.more { margin-top: 1rem; font-weight: bold; }
+
+.video {
+  position: relative;
+  margin: 1rem 0;
+  padding-top: 56.25%; /* 16:9 */
+  background: #000000;
+  border-radius: 0.4rem;
+  overflow: hidden;
+}
+
+.video iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.link-list { list-style: none; padding-left: 0; }
+
+.link-list li {
+  margin-bottom: 0.4rem;
+  padding: 0.6rem 0.75rem;
+  background: #ffffff;
+  border: 1px solid var(--card-border);
+  border-radius: 0.4rem;
+}
+
+.link-list a { font-weight: bold; }
+
+.site-footer {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 3rem;
+  border-top: 3px solid var(--accent);
+  color: var(--ink);
+}
+
+.site-footer p { margin: 0 0 0.5rem; }
+
+@media (min-width: 40rem) {
+  h1 { font-size: 3rem; }
+  .card { padding: 1.75rem 1.75rem 1.25rem; }
+}

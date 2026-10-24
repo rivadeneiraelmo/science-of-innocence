@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# After publishing, replace this with the site's real GitHub Pages address.
+Sitemap: https://rivadeneiraelmo.github.io/science-of-innocence/sitemap.xml
